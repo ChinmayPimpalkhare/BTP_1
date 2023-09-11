@@ -1,0 +1,26 @@
+Each STL File needs to be renamed in the following format 
+-1. Whether there is a crack or not. "Yes: y", "No: n"  
+0. Nature of the crack. "Surface: sur", "Penetrating: pen", "No crack: nil"
+
+
+When -1 = y, the rest must be filled in the following way
+1. Crack Location (Lx and Ly): where Lx and Ly are measured considering the left bottom corner of the steel plate to be the origin. 
+	Consider left vertical and lower horizontal edges. 
+	Lx and Ly should be 2 digit numbers with no decimals (so if Lx = 67.8, it should be written as 678)
+2. Length of the crack: l (a.bc ---> abc)
+3. Width of the crack: w (0.abc --> abc) 
+4. Penetration Depth of the crack (d) (a.b --> ab)  
+
+Only a single file should be enough for -1 = n, so no need to append
+
+All values need to be in mm.
+Further, the dimensions of the steel plate are to be taken as 100mm by 100mm by 10mm
+
+
+File format examples: 
+
+y_pen_12_50_101_020_05
+n_nil
+
+
+
